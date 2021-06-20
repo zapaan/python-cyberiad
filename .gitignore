@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+
+# Envs
+.python_version
+
+# Editors
+*.swp
+
+# Build
+dist/
+
+# Project
+.mypy_cache/
+
+# Personal
+tmp/

@@ -1,0 +1,30 @@
+[build-system]
+requires = ['flit_core >=2,<4']
+build-backend = 'flit_core.buildapi'
+
+[tool.flit.metadata]
+module = 'cyberiad'
+author = 'Francky'
+author-email = 'francky@protonmail.com'
+home-page = 'https://github.com/zapaan/cyberiad'
+description-file = 'README.md'
+requires = [
+    'httpx<1',
+    'packaging',
+]
+[tool.flit.metadata.requires-extra]
+test = [
+    'mypy==0.812',
+    'isort==5.8.0',
+    'black==20.8b1',
+    'pytest==6.2.3',
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+fast = true
+
+[tool.isort]
+profile = 'black'
+line_length = 88

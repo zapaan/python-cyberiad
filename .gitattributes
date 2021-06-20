@@ -1,0 +1,5 @@
+*.py text
+*.md text
+*.yaml text
+*.toml text
+*.txt text
